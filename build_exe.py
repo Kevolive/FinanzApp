@@ -12,6 +12,7 @@ PyInstaller.__main__.run([
     '--windowed',
     '--name=Gestión Financiera - Garcia Roldan',
     '--add-data=estilos.py;.',  # Incluir archivo de estilos
+    '--hidden-import=ttkbootstrap',  # Incluir ttkbootstrap
     '--clean',
     '--distpath', output_dir,  # Especificar carpeta de salida
     '--noconfirm'  # No preguntar por confirmación
