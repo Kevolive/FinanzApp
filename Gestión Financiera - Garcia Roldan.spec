@@ -1,12 +1,26 @@
 # -*- mode: python ; coding: utf-8 -*-
+from PyInstaller.utils.hooks import collect_data_files
+
+datas = [('estilos.py', '.'), ('finanzas_hogar.xlsx', '.')]
+datas += collect_data_files('tkinter')
+datas += collect_data_files('ttkbootstrap')
+datas += collect_data_files('matplotlib')
+datas += collect_data_files('pandas')
+datas += collect_data_files('numpy')
+datas += collect_data_files('openpyxl')
+datas += collect_data_files('python_dateutil')
+datas += collect_data_files('tcl')
+datas += collect_data_files('tk')
+datas += collect_data_files('tcl8')
+datas += collect_data_files('tk8.6')
 
 
 a = Analysis(
     ['app_finanzas.py'],
     pathex=[],
     binaries=[],
-    datas=[('estilos.py', '.'), ('finanzas_hogar.xlsx', '.')],
-    hiddenimports=['ttkbootstrap', 'ttkbootstrap.themes', 'ttkbootstrap.icons', 'matplotlib', 'matplotlib.backends.backend_tkagg', 'matplotlib.figure', 'matplotlib.axes', 'matplotlib.pyplot', 'matplotlib.ticker', 'matplotlib.dates', 'matplotlib.font_manager', 'matplotlib.style', 'pandas', 'numpy', 'openpyxl', 'python_dateutil', 'python_dateutil.tz', 'python_dateutil.parser', 'python_dateutil.relativedelta', 'python_dateutil.rrule', 'python_dateutil.easter', 'python_dateutil.tzwin', 'python_dateutil.zoneinfo', 'tcl', 'tk', '_tkinter', 'tcl8', 'tk8.6', 'tkinter', 'tkinter.ttk', 'tkinter.messagebox', 'tkinter.font'],
+    datas=datas,
+    hiddenimports=[],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
