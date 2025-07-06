@@ -36,11 +36,16 @@ PyInstaller.__main__.run([
     '--hidden-import=python_dateutil.easter',  # Incluir dateutil.easter
     '--hidden-import=python_dateutil.tzwin',  # Incluir dateutil.tzwin
     '--hidden-import=python_dateutil.zoneinfo',  # Incluir dateutil.zoneinfo
+    '--hidden-import=tcl',  # Incluir tcl
+    '--hidden-import=tk',  # Incluir tk
+    '--hidden-import=_tkinter',  # Incluir _tkinter
+    '--hidden-import=tcl8',  # Incluir tcl8
+    '--hidden-import=tk8.6',  # Incluir tk8.6
+    '--hidden-import=tkinter',  # Incluir tkinter
+    '--hidden-import=tkinter.ttk',  # Incluir ttk
+    '--hidden-import=tkinter.messagebox',  # Incluir messagebox
+    '--hidden-import=tkinter.font',  # Incluir font
     '--clean',
     '--distpath', output_dir,  # Especificar carpeta de salida
     '--noconfirm',  # No preguntar por confirmación
-    '--exclude-module=tkinter',  # Excluir tkinter ya que viene con Python
-    '--exclude-module=_tkinter',  # Excluir _tkinter ya que viene con Python
-    '--exclude-module=tcl',  # Excluir tcl ya que viene con Python
-    '--exclude-module=tk',  # Excluir tk ya que viene con Python
 ])

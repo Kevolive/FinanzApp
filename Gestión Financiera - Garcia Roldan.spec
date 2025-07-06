@@ -6,11 +6,11 @@ a = Analysis(
     pathex=[],
     binaries=[],
     datas=[('estilos.py', '.'), ('finanzas_hogar.xlsx', '.')],
-    hiddenimports=['ttkbootstrap', 'ttkbootstrap.themes', 'ttkbootstrap.icons', 'matplotlib', 'matplotlib.backends.backend_tkagg', 'matplotlib.figure', 'matplotlib.axes', 'matplotlib.pyplot', 'matplotlib.ticker', 'matplotlib.dates', 'matplotlib.font_manager', 'matplotlib.style', 'pandas', 'numpy', 'openpyxl', 'python_dateutil', 'python_dateutil.tz', 'python_dateutil.parser', 'python_dateutil.relativedelta', 'python_dateutil.rrule', 'python_dateutil.easter', 'python_dateutil.tzwin', 'python_dateutil.zoneinfo'],
+    hiddenimports=['ttkbootstrap', 'ttkbootstrap.themes', 'ttkbootstrap.icons', 'matplotlib', 'matplotlib.backends.backend_tkagg', 'matplotlib.figure', 'matplotlib.axes', 'matplotlib.pyplot', 'matplotlib.ticker', 'matplotlib.dates', 'matplotlib.font_manager', 'matplotlib.style', 'pandas', 'numpy', 'openpyxl', 'python_dateutil', 'python_dateutil.tz', 'python_dateutil.parser', 'python_dateutil.relativedelta', 'python_dateutil.rrule', 'python_dateutil.easter', 'python_dateutil.tzwin', 'python_dateutil.zoneinfo', 'tcl', 'tk', '_tkinter', 'tcl8', 'tk8.6', 'tkinter', 'tkinter.ttk', 'tkinter.messagebox', 'tkinter.font'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
-    excludes=['tkinter', '_tkinter', 'tcl', 'tk'],
+    excludes=[],
     noarchive=False,
     optimize=0,
 )
